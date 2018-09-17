@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+.ques{
+  float: left;
+  width: 100px;
+  padding: 5px;
+}
+
+.ans{
+  float: left;
+  width: 250px;
+  padding: 5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
