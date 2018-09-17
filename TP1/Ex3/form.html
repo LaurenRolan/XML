@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8"> 
+<head>
+	<link rel="stylesheet" href="form.css">
+	<script src="form.js"></script> 
+	<title> Exercice 3 </title>
+</head>
+<body>
+	<div id="formulaire">
+		<form name='saisir'>
+			<div class='row'>
+				<div class='ques'>
+					<label for='nom'> Prénom: </label>
+				</div>
+				<div class='ans'>
+					<input type='text' name='nom' size='15' maxlength='15'>
+				</div>
+			</div>
+			<div class='row'>
+				<div class='ques'>
+					<label for='ecole'> École: </label>
+				</div>
+				<div class='ans'>
+					<input type='text' name='ecole' size='15' maxlength='15'>
+				</div>
+			</div>
+			<input type="button" value="Envoyer" onclick="validateForm()">
+		</form>
+	</div>
+	<div id="content" style="display: none">
+		Bonjour <var id="nomVar"> </var> !<br>
+		Bienvenue à l'école <var id="ecoleVar"> </var> <br>
+		<div class='ques'>
+			<img src="../IMAGES/Artie.gif"></img><br>
+		</div>
+		<div class='ans'></div>
+		<form name="carte">
+			<div class="ques">
+				<img id="pict" src="../IMAGES/jeuxdeCartes/1.png"  style="display: none"> </img>
+			</div>
+			<div class='ans'>
+				Choisissez un numéro de carte:
+				<input type="text" size='2' maxlength='2' name="numero">
+				<input type="button" value="Envoyer" onclick="picture()">
+			</div>
+		</form>
+	</div>
+</body>
+</html>
