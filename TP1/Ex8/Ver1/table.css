@@ -1,0 +1,22 @@
+p {
+	text-align: center;
+}
+
+table, th, td {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+th, td {
+	width: 50px;
+	text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+	background-color: #66ff66;
+	color: white;
+}
