@@ -4,8 +4,13 @@
 <!ELEMENT article (titre,auteur,infosPublication, avis?)>
 
 <!ELEMENT titre (#PCDATA)>
+<!ATTLIST titre sousTitre CDATA #IMPLIED>
+
 <!ELEMENT auteur (#PCDATA)>
-<!ELEMENT tomes (#PCDATA)>
+<!ELEMENT tomes EMPTY>
+<!ATTLIST tomes nombrePage CDATA #REQUIRED>
+<!ATTLIST tomes sousTitre CDATA #IMPLIED>
+
 <!ELEMENT avis (#PCDATA)>
 <!ELEMENT infosEdition (editeur, lieuEdition, lieuImpression, ISBN)>
 <!ELEMENT editeur (#PCDATA)>
@@ -13,8 +18,8 @@
 <!ELEMENT lieuImpression (#PCDATA)>
 <!ELEMENT ISBN (#PCDATA)>
 
-<!ELEMENT infosPublication (nomJournal, pages, anneePublication, numeroJournal)>
-<!ELEMENT nomJournal (#PCDATA)>
+<!ELEMENT infosPublication (pages, anneePublication, numeroJournal)>
+<!ATTLIST infosPublication nomJournal CDATA "Feuille de Chou">
 <!ELEMENT pages (#PCDATA)>
 <!ELEMENT anneePublication (#PCDATA)>
 <!ELEMENT numeroJournal (#PCDATA)>
