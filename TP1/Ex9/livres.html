@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8"> 
+<head>
+	<link rel="stylesheet" href="table.css">
+	<script src="livre.js">
+		var listeLivre = [];
+		
+		function Livre(titre, auteur, editeur, prix, image) {
+			var livre = {
+				this.titre: titre;
+				this.auteur: auteur;
+				this.editeur: editeur;
+				this.prix: prix;
+				this.image: image;
+			}
+			function afficher() {
+				afficherLivre(this);
+			}
+		}
+		
+		function afficherLivre(livre) {
+			var tbody = document.getElementById("livresBody");
+			var table = document.getElementById("livresTableau");
+
+			var tr = document.createElement("tr");
+
+			var td = document.createElement("td");
+			var cover = document.createElement("img");
+			cover.src = "../IMAGES/livres/" + livre.image;
+			td.appendChild(cover);
+			tr.appendChild(td);
+
+			var td = document.createElement("td");
+			var header = document.createElement("h3");
+			header.appendChild(livre.titre);
+			td.appendChild(header);
+			var unList = document.createElement("ul");
+			var author = document.createElement("il");
+			author.innerHTML = "<b>Auteur</b>: " + livre.auteur;
+			var price = document.createElement("il");
+			price.innerHTML = "<b>Prix</b>: " + livre.prix;
+			var editor = document.createElement("il");
+			editor.innerHTML = "<b>Editeur</b>: " + livre.editeur;
+			tr.appendChild(td);
+			tbody.appendChild(tr);
+			table.appendChild(tbody);
+		}
+		
+		function ajouter(livre) {
+			listeLivre.push(livre);
+		}
+	
+	</script>
+	<title> Livres sur JS </title>
+</head>
+<body>
+	<h1> Livres sur JavaScript </h1>
+	<table id="livresTableau"> <tbody="livresBody"> </tbody> </table>
+	
+</body>
+</html>

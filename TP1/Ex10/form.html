@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8"> 
+<head>
+	<link rel="stylesheet" href="form.css">
+	<script src="form.js"></script>
+	<title> Exercice 10 </title>
+</head>
+<body>
+	<div id='coord'>
+		<div class='headYellow'>
+			Coordonnées
+		</div>
+		<div class='clearfix'>
+			<form name="questionaire" > <!--action='mailto:lauren.rolan@ecole.ensicaen.fr?subject=TP1 de HTML'-->
+				<div class='row'>
+					<div class="ques">
+						<label for="civilite">Civilité: </label>
+					</div>
+					<div class='ans'>
+						<input type='radio' name="civilite" value="monsieur"> M.
+						<input type='radio' name="civilite" value="mademoiselle"> Mlle.
+						<input type='radio' name="civilite" value="madame"> Mme.
+					</div>
+				</div>
+				<div class='row'>
+					<div class="ques">
+						<label for="nom">Nom: </label>
+					</div>
+					<div class='ans'>
+						<input type='text' id='nom' maxlength="15" size='15'> 
+					</div>
+				</div>
+				<div class='row'>
+					<div class="ques">
+						<label for="adr">Adresse: </label>
+					</div>
+					<div class='ans'>
+						<input type='text' id='adresse' maxlength="30" size='30'>
+					</div>
+				</div>
+				<div class='row'>
+					<div class="ques">
+						<label for="code">Code postal: </label>
+					</div>
+					<div class='ans'>
+						<input type='text' id='code' maxlength="5" size='5'>
+					</div>
+				</div>
+				<div class='row'>
+					<div class="ques">
+						<label for="age">Age: </label>
+					</div>
+					<div class='ans'>
+						<input type='password' id='age' maxlength="2" size='2'> ans
+					</div>
+				</div>
+				<div class='row'>
+					<div class="ques">
+						<label for="ville">Ville: </label>
+					</div>
+					<div class='ans'>
+						<input type='text' id='ville' maxlength="15" size='15'>
+					</div>
+				</div>
+				<div class='row'>
+					<div class="ques">
+						<label for="email">Email: </label>
+					</div>
+					<div class='ans'>
+						<input type="email" id='email' maxlength="30" size='30'>
+					</div>
+				</div>
+				<div class='row'>
+					<div class="ques">
+						<label for="pays">Pays: </label>
+					</div>
+					<div class='ans'>
+						<select id="pays" size="1">
+							<option selected value> -- select un pays -- </option>
+							<option value="France">France</option>
+							<option value="Bresil">Brésil</option>
+							<option value="Italie">Italie</option>
+							<option value="Argelie">Argelie</option>
+						</select>
+					</div>
+				</div>
+				<div class='row'>
+					<div class="ques">
+						<label for='inter'> Centres d'intérêts:</label>
+					</div>
+					<div class='ans'>
+						<input type="checkbox" name="inter" value="sport"> Sport
+						<input type="checkbox" name="inter" value="cinema"> Cinéma <br>
+						<input type="checkbox" name="inter" value="internet"> Internet
+						<input type="checkbox" name="inter" value="voyages"> Voyages <br>
+					</div>
+				</div>
+				<div id='message'>
+					<div class='headYellow'>
+						Message
+					</div>
+					<textarea name="message" rows="10" cols="30"></textarea> 
+				</div>
+				<input type="submit" value="Envoyer" onClick="return formtest(document.questionnaire) && securite('expédier maintenant')">
+				<input type='reset' value="Recommencer" onClick="formtest(document.questionnaire)">
+			</form>
+		</div>
+	
+</body>
+</html>
