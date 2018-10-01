@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblio SYSTEM "biblio.dtd">
+<livre>
+	<titre>Test 1</titre>
+	<auteur>Auteur 1</auteur>
+	<tomes>3</tomes>
+	<infosEdition>
+		<editeur>Lauren</editeur>
+		<lieuEdition>Porto Alegre</lieuEdition>
+		<lieuImpression>Porto Alegre</lieuImpression>
+	</infosEdition>
+	<avis>Cet un bon livre.</avis>
+</livre>

@@ -1,0 +1,26 @@
+<!DOCTYPE livre
+[
+<!ELEMENT livre (titre,auteur,tomes,infosEdition, avis?)>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT auteur (#PCDATA)>
+<!ELEMENT tomes (#PCDATA)>
+<!ELEMENT avis (#PCDATA)>
+<!ELEMENT infosEdition (editeur, lieuEdition, lieuImpression, ISBN)>
+<!ELEMENT editeur (#PCDATA)>
+<!ELEMENT lieuEdition (#PCDATA)>
+<!ELEMENT lieuImpression (#PCDATA)>
+<!ELEMENT ISBN (#PCDATA)>
+]>
+
+<!DOCTYPE aricle
+[
+<!ELEMENT article (titre,auteur,infosPublication, avis?)>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT auteur (#PCDATA)>
+<!ELEMENT avis (#PCDATA)>
+<!ELEMENT infosPublication (nomJournal, pages, anneePublication, numeroJournal)>
+<!ELEMENT nomJournal (#PCDATA)>
+<!ELEMENT pages (#PCDATA)>
+<!ELEMENT anneePublication (#PCDATA)>
+<!ELEMENT numeroJournal (#PCDATA)>
+]>
