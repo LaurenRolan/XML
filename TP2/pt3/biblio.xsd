@@ -17,7 +17,7 @@
 		<xs:element name="tomes">
 		<xs:complexType>
 			<xs:choice maxOccurs="unbounded">
-			<xs:element name="tome"  minOccurs="1">
+			<xs:element name="tome"  minOccurs="1" maxOccurs="unbounded">
 				<xs:complexType>
 					<xs:attribute name='nombrePage' type='xs:nonNegativeInteger' use='required' />
 					<xs:attribute name='sousTitre' type='xs:string'/>
