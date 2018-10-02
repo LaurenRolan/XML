@@ -4,7 +4,9 @@
 <livre>
 	<titre> Test 1 </titre>
 	<auteur>Auteur 1</auteur>
-	<tomes nombrePage='3'></tomes>
+	<tomes>
+		<tome nombrePage='3'></tome>
+	</tomes>
 	<infosEdition>
 		<editeur>Lauren</editeur>
 		<lieuEdition>Porto Alegre</lieuEdition>

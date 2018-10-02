@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8"> 
+<head>
+	<link rel="stylesheet" href="table.css">
+	<script src="table.js"></script>
+	<title> Diaporama </title>
+</head>
+<body onload="init()">
+	
+	<h1>Diaporama</h1>
+	<img id="card" />
+	<table id="options">
+		<tr> 
+			<td> <input type="button" id="prec" value="Précédent" onclick="precedent()"> </td>
+			<td> <input type="button" id="suiv" value="Suivant" onclick="suivant()"> </td>
+		</tr>
+		<tr> 
+			<td> <input type="button"  id="prem" value="Premier" onclick="premier()"> </td>
+			<td> <input type="button"  id="dern" value="Dernier" onclick="dernier()"> </td>
+		</tr>
+	</table>
+
+	<p> <textarea rows="1" cols="2" id="current"> </textarea> of <textarea rows="1" cols="2" id="total"> </textarea> </p>
+		
+</body>
+</html>

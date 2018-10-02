@@ -4,7 +4,8 @@
 <livre>
 	<titre> Test 1 </titre>
 	<auteur>Auteur 1</auteur>
-	<tomes nombrePage='3'></tomes>
+	<auteur>Auteur 11</auteur>
+	<tomes><tome nombrePage='3'></tome></tomes>
 	<infosEdition>
 		<editeur>Lauren</editeur>
 		<lieuEdition>Porto Alegre</lieuEdition>
@@ -23,5 +24,16 @@
 		<numeroJournal>123</numeroJournal>
 	</infosPublication>
 	<avis>Cet un bon article.</avis>
+</article>
+
+<article>
+	<titre> Test 3 </titre>
+	<auteur>Auteur 3</auteur>
+	<infosPublication>
+		<pages>15</pages>
+		<anneePublication>2017</anneePublication>
+		<numeroJournal>125</numeroJournal>
+	</infosPublication>
+	<avis>Cet un TRÈS bon article.</avis>
 </article>
 </biblio>

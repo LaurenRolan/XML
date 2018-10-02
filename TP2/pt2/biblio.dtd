@@ -1,15 +1,15 @@
 <!ELEMENT biblio (livre*, article*)*>
 
-<!ELEMENT livre (titre,auteur,tomes,infosEdition, avis?)>
-<!ELEMENT article (titre,auteur,infosPublication, avis?)>
+<!ELEMENT livre (titre,auteur+,tomes,infosEdition, avis?)>
+<!ELEMENT article (titre,auteur+,infosPublication, avis?)>
 
 <!ELEMENT titre (#PCDATA)>
 <!ATTLIST titre sousTitre CDATA #IMPLIED>
 
 <!ELEMENT auteur (#PCDATA)>
-<!ELEMENT tomes EMPTY>
-<!ATTLIST tomes nombrePage CDATA #REQUIRED>
-<!ATTLIST tomes sousTitre CDATA #IMPLIED>
+<!ELEMENT tomes (tome+)>
+<!ELEMENT tome EMPTY>
+<!ATTLIST tome nombrePage CDATA #REQUIRED sousTitre CDATA #IMPLIED>
 
 <!ELEMENT avis (#PCDATA)>
 <!ELEMENT infosEdition (editeur, lieuEdition, lieuImpression, ISBN)>

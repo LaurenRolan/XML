@@ -1,11 +1,13 @@
 <!ELEMENT biblio (livre*, article*)*>
 
-<!ELEMENT livre (titre,auteur,tomes,infosEdition, avis?)>
-<!ELEMENT article (titre,auteur,infosPublication, avis?)>
+<!ELEMENT livre (titre,auteur+,tomes,infosEdition, avis?)>
+<!ELEMENT article (titre,auteur+,infosPublication, avis?)>
 
 <!ELEMENT titre (#PCDATA)>
 <!ELEMENT auteur (#PCDATA)>
-<!ELEMENT tomes (#PCDATA)>
+<!ELEMENT tomes (tome+)>
+<!ELEMENT tome (nombrePages)>
+<!ELEMENT nombrePages (#PCDATA)>
 <!ELEMENT avis (#PCDATA)>
 <!ELEMENT infosEdition (editeur, lieuEdition, lieuImpression, ISBN)>
 <!ELEMENT editeur (#PCDATA)>
