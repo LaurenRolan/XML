@@ -43,7 +43,7 @@
 
 <xs:simpleType name='typeISBN'>
 	<xs:restriction base='xs:string'> 
-		<xs:pattern value='[0-9]{10}'> </xs:length>
+		<xs:pattern value='[0-9]{10}'> </xs:pattern>
 	</xs:restriction>
 </xs:simpleType>
 

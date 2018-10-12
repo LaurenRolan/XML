@@ -1,4 +1,5 @@
 var time = "toute";
+var dir = "/home/public/2A_INFO/TECHNO_XML/TP3/"
 
 function loadDoc() {
   var xhttp = new XMLHttpRequest();
